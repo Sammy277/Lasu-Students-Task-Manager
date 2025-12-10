@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tasks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <img src="download.jpg" alt="Lasu Logo" style="width: 90px; height: auto; display: block; margin: auto;">
+    <h2>Lasu Students Task Manager</h2>
+    <input id="taskInput" type="text" placeholder="Type a new task">
+    <button id="addBtn" onclick="addTask()">Add</button>
+    <ul id="taskList">
+      <li>
+        <input type="checkbox">
+        <span>Learn HTML</span>
+        <button class="icon" onclick="editTask(this)">✏️</button>
+        <button class="icon" onclick="deleteTask(this)">🗑️</button>
+      </li>
+      <li>
+        <input type="checkbox">
+        <span>Practice CSS</span>
+        <button class="icon" onclick="editTask(this)">✏️</button>
+        <button class="icon" onclick="deleteTask(this)">🗑️</button>
+      </li>
+      <li>
+        <input type="checkbox">
+        <span>Build a project</span>
+        <button class="icon" onclick="editTask(this)">✏️</button>
+        <button class="icon" onclick="deleteTask(this)">🗑️</button>
+      </li>
+    </ul>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
